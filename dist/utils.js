@@ -91,7 +91,7 @@ async function post({ url, body, header, json }) {
                     }
                 }
                 catch (error) {
-                    reject(new Error('Failed to parse : \'' + responseBody + '\'' + ' with error: ' + error.message));
+                    reject(new Error('Failed to parse :' + responseBody));
                 }
             });
         });
